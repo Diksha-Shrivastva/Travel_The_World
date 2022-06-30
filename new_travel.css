@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size:10px;
+}
+html{
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:10px;
+
+
+}
+body{
+    background-color:rgb(189, 184, 184);
+}
+
+/* ############################################################ DEFAULT############################################# */
+
+a{
+    text-decoration:none;
+    color:white;
+    font-size:2rem;
+    padding:0.5rem;
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+    
+}
+.container::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+h1{
+    font-size:4rem;
+    font-weight: 600;
+    color:white;
+}
+p{
+    font-size:2rem;
+    font-weight:400;
+    color:white;
+}
+.main-button{
+    padding:1rem;
+    background-color:white;
+    border-radius: 2rem;
+    color:red;
+    border:1px solid red;
+}
+.main-button:hover{
+    background-color:black;
+    color:white;
+}
+
+
+
+
+
+/* ######################################### HEADER SECTION########################################## */
+.header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("R.jpg");
+    height:90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navigation{
+    background-color: rgb(70, 65, 65);
+}
+.navigation .container{
+    padding:0.5rem 0;
+}
+
+
+.header .navigation .navj-items{
+    
+    float:right;
+    
+}
+.navi-logo{
+    float:left;
+}
+.nav-logo{
+    height:4rem;
+    width:4rem;
+    
+}
+.navi-items .nav-item{
+    display:inline-block;
+    padding:1rem;
+    
+}
+.nav-item a:hover{
+    background-color: rgb(19, 18, 18);
+    border-radius: 1rem;
+}
+
+/* ######################################middle of header########################################################### */
+
+.head-mid{
+    position: absolute;
+    
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding:3rem;
+}
+.head-mid h1,p{
+    margin-bottom:1rem;
+}
+.head-mid p{
+    margin-bottom:1.5em !important;
+}
+
+
+
+/* #################################website-middle-section################################ */
+.middle .container .row1,.row2,.row3{
+    height:25rem;
+    width:100%;
+    box-shadow: 0px 0px 10px black;
+    
+}
+.middle .container{
+    margin:5rem auto;
+    width:70% !important;
+}
+.middle .container .row1{
+    margin-bottom: 5rem;
+}
+
+
+.middle .container .row .row-left,.row-right,.row-left{
+    height:100%;
+    width:50%;
+    
+    
+    
+}
+.row::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+.row-left{
+    float:left;
+    
+}
+.row-right{
+    float:right;
+}
+.row-left{
+    float:left;
+}
+.row1 .row-left img,.row2 .row-right img,.row3 .row-left img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    background-position: center;
+}
+.row h1{
+    color:black;
+    margin-bottom:1rem;
+
+}
+.row p{
+    color:rgb(77, 73, 73);
+}
+.row1 .row-right,.row2 .row-left,.row3 .row-right{
+    padding:2rem;
+    background-color:rgb(255, 255, 255);
+}
+.button{
+    background-color:rgb(243, 237, 237);
+    border:2px solid red;
+    border-radius: 2rem;
+    
+
+}
+.row1 .row-right a,.row2 .row-left a,.row3 .row-right a{
+    color:rgb(255, 0, 0);
+    display: inline-block;
+    padding:1rem 1.5rem;
+}
+
+/* #####################################feature section################################## */
+
+.feature{
+    background-color: white;
+    height:40vh;
+    position: relative;
+}
+.feature .container{
+    width:70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 10px black;
+}
+.feature .container .box{
+    height:100%;
+    width:33.3%;
+    
+    float:left;
+    text-align: center;
+    padding:1.5rem;
+    
+}
+.feature .container .box h1{
+    font-size:2rem;
+    margin-bottom:1rem;
+    
+    
+    
+}
+.box1,.box3{
+    background-color: rgb(22, 21, 21);
+}
+.feature .container .box p{
+    font-size: 1.8rem;
+    
+}
+.box2{
+    background-color: rgb(146, 19, 19);
+}
+.box1 .icon,.box3 .icon{
+    color:red;
+    margin-bottom:0.5rem;
+}
+.feature .container .box2 .icon{
+    margin-bottom:0.5rem;
+    
+    color:white;
+}
+
+
+/* ######################################### footer ################################# */
+.footer{
+    background-color:rgb(22, 21, 21);
+    text-align: center;
+    padding:1.5rem;
+}
+.footer p{
+    font-size:1.8rem;
+}
+
+.ico{
+    color:white;
+    padding:1.5rem;
+}
+.ico:hover{
+    color:red;
+}
+.ico2{
+    color:white;
+}
+
+/* ##############################################media queries ################################## */
+
+@media screen and (max-width:420px){
+    html{
+        font-size: 8px;
+    }
+
+    .navi-logo,.navj-items{
+        float:none;
+        width:100%;
+        text-align: center;
+        display:inline-block;
+        
+        
+    }
+    .header{
+        height:50vh;
+    }
+    .head-mid h1{
+        font-size:3rem;
+    }
+    .head-mid{
+        margin-top:4rem;
+        width:80%;
+    }
+    .middle .container .row1,.row2{
+        height:17rem;
+    }
+    .row1 .row-right h1,.row2 .row-left h1{
+        font-size:2.5rem;
+        text-align: center;
+    
+        
+    }
+    .row1 .row-right,.row2 .row-left{
+        padding:1rem;
+        
+    }
+
+    .row1 .row-right p,.row2 .row-left p{
+        font-size: 1.2rem;
+    }
+    .button{
+        font-size:0.7rem;
+        margin:0 !important;
+        border-radius: 0.6rem;
+        
+    }
+    .middle a{
+        padding:3px 4px !important;
+    }
+    .more-button .button{
+        float:right;
+        
+    }
+    .more-button{
+        margin-top: -1.5rem;
+    }
+    .row2 .row-left .more-button{
+        margin-top: -2.2rem;
+    }
+    .feature .container .box{
+        height:14rem;
+    }
+    .feature{
+        height:25vh;
+    }
+    .feature .container .box{
+        padding:0.5rem;
+    }
+    .feature .container .box h1{
+        font-size:1.7rem;
+    }
+    .feature .container .box .icon{
+        font-size:1.3rem;
+    }
+    .feature .container .box p{
+        font-size: 1.2rem;
+    }
+    .footer .ico{
+        font-size: 3rem;
+    }
+    .footer p{
+        font-size: 1.5rem;
+        
+    }
+    .footer{
+        padding:0.2rem;
+    }
+    
+    
+    
+    
+}

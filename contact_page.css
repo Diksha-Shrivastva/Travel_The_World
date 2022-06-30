@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size:10px;
+}
+html{
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:10px;
+
+
+}
+body{
+    background-color: rgb(209, 205, 205);
+}
+
+
+.container{
+    width:80%;
+    margin:0 auto;
+    
+}
+.container::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+a{
+    text-decoration:none;
+    color:white;
+    font-size:2rem;
+    padding:0.5rem;
+}
+.navigation{
+    background-color: rgb(70, 65, 65);
+}
+.navigation .container{
+    padding:0.5rem 0;
+}
+
+
+.header .navigation .nav-items{
+    
+    float:right;
+    
+}
+.navi-logo{
+    height:4rem;
+    width:4rem;
+    float:left;
+}
+.nav-item{
+    display:inline-block;
+    padding:1rem;
+    
+}
+.nav-item a:hover{
+    background-color: rgb(19, 18, 18);
+    border-radius: 1rem;
+}
+h1{
+    font-size:3rem;
+}
+p{
+    font-size:1.8rem;
+}
+ul{
+    list-style-type:none;
+}
+
+/* ############################################### contact page ################################### */
+.contact-page .container{
+    margin-top:3rem;
+    margin-bottom:3rem;
+    
+}
+
+.contact-page .container .left-box{
+    float:left;
+    
+    height:100%;
+    width:49%;
+}
+.contact-page .container .right-box{
+    float:right;
+    
+    height:100%;
+    width:49%;
+}
+
+/* ######################################## contact-page-left######################################## */
+.contact-page .container .left-box .divo .icon-heading{
+    color:rgb(51, 49, 49);
+    font-size:2.5rem;
+}
+.div-icon1::after{
+    content:"LOCATION";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:2.5rem;
+    margin-left:1rem;
+    color:black !important;
+    
+    
+}
+.div-icon2::after{
+    content:"E-MAIL";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:2.5rem;
+    margin-left:1rem;
+    color:black !important;
+    
+}
+.div-icon3::after{
+    content:"CALL";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:2.5rem;
+    margin-left:1rem;
+    color:black !important;
+    
+    
+}
+.div-icon1,.div-icon2,.div-icon3{
+    margin:1rem 0;
+    color:red;
+}
+.divo{
+    margin:1rem 0;
+}
+.contact-page .container .left-box img{
+    height:32.3rem;
+    width:40rem;
+    margin-top:1rem;
+}
+
+/* ############################################## contact-page-left############################################# */
+
+.right-box .div-upper .form-heading{
+    font-size:3.5rem !important;
+    font-weight:600 !important;
+    margin:1rem 0;
+    
+    padding:0.5rem;
+
+
+}
+.form-heading::after{
+    content:'';
+    display:block;
+    margin-top:1rem;
+    border-bottom:5px solid red;
+}
+.right-box .div-upper p{
+    margin-top:1rem;
+}
+
+.right-box .div-form label{
+    font-size:1.8rem;
+    font-weight:550;
+    display:inline-block;
+    margin-top:1rem;
+    
+}
+.right-box .div-form input{
+    width:100%;
+    height:2.5rem;
+}
+.right-box .div-form textarea{
+    width:100%;
+    height:20rem;
+}
+
+.right-box .div-form input[type="submit"]{
+    width:20%;
+    margin:1rem auto;
+    display:block;
+    color:white;
+    font-size:1.5rem;
+    background-color: red;
+    border:none;
+}
+.right-box .div-form input[type="submit"]:hover{
+    background-color: black;
+}
+.right-box,.left-box{
+    background-color: white;
+    padding:1rem;
+}
